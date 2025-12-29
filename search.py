@@ -72,15 +72,48 @@ def main():
     
     parser = SearchParser(test_url)
     
-    print("Search URL Parser")
-    print("=" * 50)
-    print(f"URL: {parser.url}")
-    print(f"\nSearch Query: {parser.get_search_query()}")
-    print(f"Original Query: {parser.get_original_query()}")
-    print(f"Source ID: {parser.get_source_id()}")
-    print(f"\nAll Parameters:")
+    print("=" * 70)
+    print("Google Search URL 解析结果")
+    print("=" * 70)
+    print(f"\n📎 原始URL:")
+    print(f"   {parser.url}\n")
+    
+    print("🔍 解析出的参数:")
+    print(f"   搜索关键词 (q):    {parser.get_search_query()}")
+    print(f"   原始查询 (oq):     {parser.get_original_query()}")
+    print(f"   来源标识 (sourceid): {parser.get_source_id()}")
+    
+    print(f"\n📋 所有查询参数:")
     for key, value in parser.get_all_params().items():
-        print(f"  {key}: {value}")
+        # 截断过长的值以便显示
+        display_value = value if len(value) <= 50 else value[:47] + "..."
+        print(f"   • {key:12} = {display_value}")
+    
+    print("\n" + "=" * 70)
+    print("📊 搜索结果概述")
+    print("=" * 70)
+    print(f"\n对于搜索词 '{parser.get_search_query()}'，Google 通常返回以下类型的结果：\n")
+    print("1. 📖 字典定义 - 单词 'test' 的含义、发音、词源")
+    print("2. 🎓 在线测试平台 - 各类在线考试和测验网站")
+    print("3. 💻 软件测试 - 测试框架、方法论、最佳实践")
+    print("4. 🏥 医学检测 - COVID-19检测、血液检测等")
+    print("5. 📚 教育资源 - 标准化考试（SAT、GRE等）")
+    
+    print("\n💡 相关搜索建议:")
+    related_searches = [
+        "test online", "test meaning", "test definition",
+        "covid test", "software testing", "test drive"
+    ]
+    for i, search in enumerate(related_searches, 1):
+        print(f"   {i}. {search}")
+    
+    print("\n" + "=" * 70)
+    print("📄 详细文档")
+    print("=" * 70)
+    print("\n✓ URL 参数详细解析: URL_ANALYSIS.md")
+    print("✓ 搜索结果完整分析: SEARCH_RESULTS.md")
+    print("✓ 使用说明和 API: README.md")
+    print("\n" + "=" * 70)
 
 
 if __name__ == "__main__":

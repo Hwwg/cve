@@ -48,13 +48,16 @@ params = parser.get_all_params()    # 返回字典形式的所有参数
 .
 ├── README.md           # 项目说明文档
 ├── URL_ANALYSIS.md     # URL 详细解析文档
+├── SEARCH_RESULTS.md   # Google 搜索结果分析文档
 ├── search.py           # 搜索 URL 解析器主程序
 └── test_search.py      # 单元测试
 ```
 
 ## 文档
 
-详细的 URL 解析文档请参阅 [URL_ANALYSIS.md](URL_ANALYSIS.md)
+- **URL 参数解析**: [URL_ANALYSIS.md](URL_ANALYSIS.md) - 详细的URL结构和参数说明
+- **搜索结果分析**: [SEARCH_RESULTS.md](SEARCH_RESULTS.md) - 搜索结果类型和示例
+- **API 文档**: 见下方
 
 ## API 文档
 
