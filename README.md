@@ -71,6 +71,7 @@ params = parser.get_all_params()    # 返回字典形式的所有参数
 
 ## 文档
 
+- **项目总结**: [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) - 项目完成情况和统计信息
 - **URL 参数解析**: [URL_ANALYSIS.md](URL_ANALYSIS.md) - 详细的URL结构和参数说明
 - **搜索结果分析**: [SEARCH_RESULTS.md](SEARCH_RESULTS.md) - 搜索结果类型和示例
 - **字典数据**: [DICTIONARY_DATA.md](DICTIONARY_DATA.md) - Merriam-Webster 字典数据结构
