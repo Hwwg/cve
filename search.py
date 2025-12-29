@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simple search utility for CVE database.
+Simple search URL parser utility.
 Parses search URLs and extracts query parameters.
 """
 
